@@ -4,13 +4,9 @@
 
 # Set variables here
 
-preferredap[0]="cwifi-ch"
-preferredap[1]="cwifi-uk"
-preferredap[2]="cwifi-us"
-preferredap[3]="cwifi-sg"
-preferredap[4]="cwifi-hk"
-preferredap[5]="cwifi-jp"
-preferredap[6]="cwifi-au"
+preferredap[0]="ch"
+preferredap[1]="uk"
+preferredap[2]="usa"
 
 ap="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
 wifiport=$( networksetup -listnetworkserviceorder | awk -F' ' '/(Wi-Fi|AirPort)/{print $NF}' | awk -F')' '/^en/{print $1}' )
